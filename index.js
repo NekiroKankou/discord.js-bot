@@ -45,12 +45,7 @@ client.on('message', async message => {
 	if (message.author.bot) return;
 
 	if (!message.guild) return;
-	
-	if(message.channel.id === '825987625848274954') {
-	  if(message.content === 'Pagi') {
-	    message.channel.send('Pagi Juga <:NayuSmile:792207278312783882>')
-	  }
-	}
+
 	//Message
 	if (message.content === `<@${client.user.id}>`) {
 		const kawai = client.emojis.cache.get('801780468554006609');
